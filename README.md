@@ -1,7 +1,7 @@
 # 🚚 Fleet Ops Dashboard
 
-[![CI](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/SEU-USUARIO/fleet-ops-dashboard/actions/workflows/ci.yml)
-[![Deploy](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/deploy.yml/badge.svg)](https://github.com/SEU-USUARIO/fleet-ops-dashboard/actions/workflows/deploy.yml)
+[![CI](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/ci.yml)
+[![Deploy](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/deploy.yml/badge.svg)](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/deploy.yml)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 Dashboard operacional para gestão de frota rodoviária: acompanhamento de metas de faturamento,
