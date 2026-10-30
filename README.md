@@ -1,4 +1,4 @@
-# 🚚 Fleet Ops Dashboard
+# Fleet Ops Dashboard
 
 [![CI](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/ci.yml)
 [![Deploy](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/deploy.yml/badge.svg)](https://github.com/cardasz/fleet-ops-dashboard/actions/workflows/deploy.yml)
@@ -7,14 +7,14 @@
 Dashboard operacional para gestão de frota rodoviária: acompanhamento de metas de faturamento,
 ociosidade de veículos e compliance de jornada/férias dos motoristas.
 
-**🔗 Demo ao vivo:** https://cardasz.github.io/fleet-ops-dashboard/
+**Demo ao vivo:** https://cardasz.github.io/fleet-ops-dashboard/
 
-> ⚠️ **Todos os dados são fictícios.** Placas, nomes, CPFs e valores foram gerados para fins de
+> **Todos os dados são fictícios.** Placas, nomes, CPFs e valores foram gerados para fins de
 > demonstração. Nenhum dado real de cliente ou colaborador é utilizado.
 
 <!-- Adicione aqui um print ou GIF: ![Torre de Controle](docs/screenshot-torre.png) -->
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 | Aba                               | O que mostra                                                                                                                          |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,12 +26,12 @@ ociosidade de veículos e compliance de jornada/férias dos motoristas.
 Extras: filtros globais (busca, origem, segmento), modo escuro e **importação de CSV próprio**
 (processada 100% no navegador, sem enviar nada a servidor).
 
-## 🧰 Stack
+## Stack
 
 React 19 · TypeScript · Vite · Tailwind CSS 4 · Recharts · PapaParse · Vitest ·
 GitHub Actions + GitHub Pages · Python (pandas) para preparação dos dados.
 
-## 🗂️ Dados
+## Dados
 
 - CSV consumido pelo app: [`public/data/frota_operacional.csv`](public/data/frota_operacional.csv) (650 veículos)
 - Fonte original (Excel fictício): [`data/source/`](data/source/)
@@ -47,7 +47,7 @@ python scripts/xlsx_para_csv.py
 > As colunas de RH (`Vencimento Férias`, `Última Folga`, `Dias de Folga`) são sintéticas e
 > reprodutíveis (seed fixa).
 
-## 🚀 Como rodar localmente
+## Como rodar localmente
 
 Pré-requisito: Node.js 20.19+ (ou 22+).
 
@@ -66,7 +66,7 @@ npm run dev
 | `npm test`        | Testes unitários (Vitest).      |
 | `npm run lint`    | ESLint.                          |
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 ```
 src/
@@ -81,18 +81,18 @@ Decisões: regras de negócio isoladas em funções puras (`lib/computeStats.ts`
 testes; parser tolerante a variações de cabeçalho, separador (`,` ou `;`) e BOM; datas relativas à
 **data de referência da base** (e não ao relógio), para o demo não "envelhecer".
 
-## 🌐 Deploy
+## Deploy
 
 Automático a cada push na `main` via [GitHub Actions](.github/workflows/deploy.yml) →
 GitHub Pages (Settings → Pages → Source: **GitHub Actions**).
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Gráficos por segmento e por origem
 - [ ] Exportação dos alertas em CSV
 - [ ] Série histórica (comparativo mensal)
 - [ ] Internacionalização (EN)
 
-## 📄 Licença
+## Licença
 
 [MIT](LICENSE)
